@@ -4,33 +4,47 @@
     <groupId>com.ibm.wiotp</groupId>
     <artifactId>com.ibm.wiotp.sdk.swagger</artifactId>
     <packaging>jar</packaging>
-    <name>com.ibm.wiotp.sdk.swagger</name>
-    <version>1.0.0</version>
-    <url>https://github.com/swagger-api/swagger-codegen</url>
-    <description>Swagger Java</description>
+    <version>0.1.0</version>
+    <url>https://github.com/ibm-watson-iot/swagger-java</url>
+
+    <name>IBM Watson IoT Platform SDK Swagger Client</name>
+    <description>IBM Watson IoT Platform HTTP API client to simplify application development</description>
+
     <scm>
-        <connection>scm:git:git@github.com:swagger-api/swagger-codegen.git</connection>
-        <developerConnection>scm:git:git@github.com:swagger-api/swagger-codegen.git</developerConnection>
-        <url>https://github.com/swagger-api/swagger-codegen</url>
+        <connection>scm:git:git@github.com:ibm-watson-iot/swagger-java.git</connection>
+        <developerConnection>scm:git:git@github.com:ibm-watson-iot/swagger-java.git</developerConnection>
+        <url>https://github.com/ibm-watson-iot/swagger-java</url>
     </scm>
 
     <licenses>
         <license>
-            <name>Unlicense</name>
-            <url>http://unlicense.org</url>
+            <name>Eclipse Public License - v 1.0</name>
+            <url>https://github.com/ibm-watson-iot/swagger-java/blob/master/LICENSE</url>
             <distribution>repo</distribution>
         </license>
     </licenses>
 
     <developers>
         <developer>
-            <name>Swagger</name>
-            <email>apiteam@swagger.io</email>
-            <organization>Swagger</organization>
-            <organizationUrl>http://swagger.io</organizationUrl>
+            <name>David Parker</name>
+            <email>parkerda@uk.ibm.com</email>
+            <organization>IBM</organization>
+            <organizationUrl>https://internetofthings.ibmcloud.com</organizationUrl>
         </developer>
     </developers>
 
+	<!-- See: https://central.sonatype.org/pages/apache-maven.html -->
+	<distributionManagement>
+		<snapshotRepository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+		</snapshotRepository>
+		<repository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+		</repository>
+	</distributionManagement>
+	
     <build>
         <plugins>
             <plugin>
